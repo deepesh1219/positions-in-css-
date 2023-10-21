@@ -1,0 +1,265 @@
+ASSIGNMENT QUESTIONS 
+   (INDEX.HTML)
+1. <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="style.css" />
+<title>Document</title>
+</head>
+<body>
+<div class="box boxA">
+A
+<div class="box boxB">B</div>
+<div class="box boxC">C</div>
+<div class="box boxD">D</div>
+<div class="box boxE">E</div>
+</div>
+</body>
+</html>
+
+2. Absolute Positioning- The syntaax is absolute positioning is 
+{
+    position:absolute;
+}
+
+*It will not break the normal document flow to position the element on the page. 
+
+  Relative Positioning- The syntax is relative positioning is 
+  {
+    position:relative;
+  }
+
+*It will break the normal document flow to position the element on the page.
+
+3. <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Document</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="card">
+        <img 
+    class="card-image"
+    src="https://random.imagecdn.app/300/180"
+    alt="random image"
+    />
+    <div class="card-body">
+        <h3 class="card-title">The Earth!!!</h3>
+        <p>
+            Nature is Earth's masterpiece, a symphony of life composed through
+            millennia. Its landscapes whisper tales of ancient mountains, winding
+            rivers, and flourishing forests, reminding us of the planet's
+            boundless beauty. From delicate petals to towering redwoods, nature's
+            artistry stirs awe and reconnects us to the essence of existence.
+            Nature is Earth's masterpiece, a symphony of life composed through
+            millennia. Its landscapes whisper tales of ancient mountains, winding
+            rivers, and flourishing forests.
+            </p>
+         </div>
+      </div>
+  </body>
+</html>
+
+4. <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="style.css" />
+<title>Document</title>
+<body>
+<div class="main">
+<header class="header">
+<div class="logo">LOGO</div>
+<div class="nav">
+<ul>
+<li class="nav-item active">Home</li>
+<li class="nav-item">Pricing</li>
+<li class="nav-item">Contact</li>
+<li class="nav-item">Terms and Condition</li>
+<li class="nav-item button"><button>Get Started</button></li>
+</ul>
+</div>
+</header>
+<main>
+<section>
+<h3>Heading 1</h3>
+<p>
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum ossimus modi magni
+deleniti rerum provident minima nisi cum delectus, inventore, ...
+</p>
+</section>
+<section>
+<h3>Heading 2</h3>
+<p>
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum possimus modi
+magni deleniti rerum provident minima nisi cum
+delectus, inventore, facere corrupti ...
+</p>
+</section>
+<section>
+<h3>Heading 3</h3>
+<p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum possimus modi
+magni deleniti rerum provident minima nisi...
+</p>
+</section>
+</main>
+</div>
+</body>
+</html>
+
+5. <!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>About Us</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="container">
+        <div class="box box__1">z-index 1</div>
+        <div class="box box__2">z-index 2</div>
+        <div class="box box__3">z-index 3</div>
+    </div>
+</body>
+</html>
+
+
+
+(STYLE.CSS)
+
+.box {
+    width: 50px;
+    height: 50px;
+    background-color: aquamarine;
+    border: 1px solid lightgreen;
+    text-align: center;
+    }
+    .boxA {
+    position: relative;
+    top: 200px;
+    left: 200px;
+    }
+    .boxB {
+    position: absolute;
+    left: -30px;
+    bottom: 30px;
+    }
+    .boxC {
+    position: absolute;
+    right: -30px;
+    bottom: 30px;
+    }
+    .boxD {
+    position: absolute;
+    left: -30px;
+    top: 30px;
+    }
+    .boxE {
+    position: absolute;
+    right: -30px;
+    top: 30px;
+    }
+
+
+
+ .card {
+    padding: 10px;
+    background-color: beige;
+    border-radius: 5px;
+    }
+    .card-image {
+    float: right;
+    padding-left: 10px;
+    padding-right: 10px;
+    }  
+    
+    
+
+
+  * {
+    padding: 0px;
+    margin: 0px;
+    }
+    .header {
+    position: sticky;
+    top: 0px;
+    height: 80px;
+    color: #f0efee;
+    background-color: #2b2922;
+    }
+    .logo {
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 20px;
+    margin: auto 0px;
+    height: fit-content;
+    font-weight: bold;
+    }
+    .logo img {
+    width: 120px;
+    }
+    .nav {
+     position: absolute;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    margin: auto 0px;
+    height: fit-content;
+    font-family: "Red Rose", cursive;
+    }
+    .nav-item {
+    display: inline;
+    margin: 0px 15px;
+    color: #63615a;
+    }
+    .nav-item.active {
+    color: #ffffff;
+    }
+    .nav-item.button > button {
+    padding: 10px 20px;
+    background: transparent;
+    border: 2px solid #a08f36;
+    border-radius: 10px;
+    color: #a08f36;
+    font-family: "Red Rose", cursive;
+    }
+    main {
+    padding: 20px;
+    }
+    section {
+    margin-top: 20px;
+    }   
+
+
+    .container {
+        position: relative;
+        }
+        .box {
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        font-size: 20px;
+        color: white;
+        padding: 5px;
+        }
+        .box__1 {
+        background-color: red;
+        }
+        .box__2 {
+        left: 50px;
+        top: 50px;
+        background-color: blue;
+        z-index: 1;
+        }
+        .box__3 {
+        left: 100px;
+        top: 100px;
+        background-color: green;
+        }
